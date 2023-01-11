@@ -1,6 +1,9 @@
-img {
-  height: 55vw;
-  width: 106vw;
+.mySwiper {
+  padding-top: 1.5rem !important;
+}
+
+.swiper-slide img {
+  width: 100%;
 }
 
 .swiper-slide {
@@ -54,6 +57,11 @@ img {
   .swiper-pagination {
     display: block;
   }
+
+  .swiper-pagination-bullet {
+    background: white;
+  }
+
   .swiper-pagination-bullet-active {
     background: rgb(225, 225, 230);
   }
