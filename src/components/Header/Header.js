@@ -4,7 +4,7 @@ import logo from "../../img/logo.svg";
 import "./Header.css";
 const Header = () => {
   const [sideNavActive, setSideNavActive] = useState(false);
-  const menuOptions = ["Agenda", "Fotos", "Integrantes", "Contato"];
+  const menuOptions = ["Agenda", "Shop", "Fotos", "Integrantes", "Contato"];
   return (
     <header className="header">
       <div
