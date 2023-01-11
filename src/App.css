@@ -44,4 +44,5 @@ h6 {
 
 .App {
   background-color: rgb(18, 18, 20);
+  height: 100vh;
 }

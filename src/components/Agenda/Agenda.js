@@ -3,7 +3,7 @@ import "./agenda.css";
 const Agenda = () => {
   const { agenda } = data;
   return (
-    <section className="root">
+    <section className="agenda">
       <h1>Agenda:</h1>
       {agenda.map(({ data, local }) => (
         <div className="wrapperAgenda">

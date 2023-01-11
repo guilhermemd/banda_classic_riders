@@ -1,5 +1,6 @@
 import { useState } from "react";
 import burger from "../../img/burger-menu.svg";
+import logo from "../../img/logo.svg";
 import "./Header.css";
 const Header = () => {
   const [sideNavActive, setSideNavActive] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
         onClick={() => setSideNavActive(!sideNavActive)}
       >
         <img src={burger} alt="menu" className="burger" />
-        <h3>Classic Riders</h3>
+        <img src={logo} alt="log" className="logo" />
       </div>
       {sideNavActive && (
         <div className="sideNavMenu">
