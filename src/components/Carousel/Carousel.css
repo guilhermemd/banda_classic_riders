@@ -1,31 +1,60 @@
-/* img {
-  height: 30vw;
-  width: 30vw;
-  object-fit: cover;
+img {
+  height: 55vw;
+  width: 106vw;
 }
 
-.swiper {
-  cursor: grab;
+.swiper-slide {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center center;
 }
 
-.swiper::before,
-.swiper::after {
-  z-index: 2;
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: -50% 0;
-  width: 800vw;
-  height: 800vw;
-  background: red;
-  border-radius: 50%;
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  display: none;
 }
 
-.swiper::before {
-  top: -795vw;
-}
+@media (min-width: 1024px) {
+  .swiper {
+    cursor: grab;
+  }
 
-.swiper::after {
-  bottom: -795vw;
-} */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    background: rgb(51, 51, 58);
+    opacity: 0.7;
+    transition: 0.3s;
+    border-radius: 50%;
+    text-align: -webkit-center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: rgb(225, 225, 230);
+    opacity: 0.6;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-weight: bold;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    opacity: 1;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+  .swiper-pagination-bullet-active {
+    background: rgb(225, 225, 230);
+  }
+}
