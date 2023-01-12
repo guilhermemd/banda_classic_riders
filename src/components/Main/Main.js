@@ -1,9 +1,11 @@
 import "./Main.css";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../Carousel";
+import News from "../News";
 const Main = () => {
   return (
     <section className="main">
       <Carousel />
+      <News />
     </section>
   );
 };
