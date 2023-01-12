@@ -32,7 +32,7 @@ const Carousel = () => {
     >
       {slides.map((slide, index) => (
         <SwiperSlide>
-          <img src={slide} key={index} />
+          <img src={slide} key={index} alt={index} />
         </SwiperSlide>
       ))}
     </Swiper>

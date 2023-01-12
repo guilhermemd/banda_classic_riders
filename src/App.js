@@ -1,14 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-// import Agenda from "./components/Agenda";
+
+import Agenda from "./pages/Agenda";
+import Main from "./pages/Main";
+
 import Header from "./components/Header";
-import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Agenda /> */}
-      <Main />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/agenda" element={<Agenda />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

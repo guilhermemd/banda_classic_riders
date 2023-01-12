@@ -1,6 +1,6 @@
 import "./Main.css";
-import Carousel from "../Carousel";
-import News from "../News";
+import Carousel from "../../components/Carousel";
+import News from "../../components/News";
 const Main = () => {
   return (
     <section className="main">
