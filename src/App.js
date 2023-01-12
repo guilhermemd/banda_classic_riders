@@ -5,6 +5,7 @@ import Agenda from "./pages/Agenda";
 import Main from "./pages/Main";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/agenda" element={<Agenda />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
