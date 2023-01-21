@@ -15,6 +15,15 @@
   gap: 1rem;
 }
 
+[class*="img-news-"] {
+  transition: 0.4s;
+}
+
+[class*="img-news-"]:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
 @media (min-width: 768px) {
   .img-news-0 {
     grid-area: img-news-0;
