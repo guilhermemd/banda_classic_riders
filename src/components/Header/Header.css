@@ -16,6 +16,10 @@
   margin: 0 auto;
 }
 
+.header__burger__btn {
+  all: unset;
+}
+
 .burger {
   width: 2rem;
 }
@@ -34,6 +38,7 @@
 }
 
 .sideNavMenuOptions {
+  all: unset;
   color: white;
   font-size: 1.25rem;
 }

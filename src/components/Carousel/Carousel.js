@@ -31,7 +31,7 @@ const Carousel = () => {
       className="mySwiper"
     >
       {slides.map((slide, index) => (
-        <SwiperSlide>
+        <SwiperSlide key={index}>
           <img src={slide} key={index} alt={index} />
         </SwiperSlide>
       ))}
