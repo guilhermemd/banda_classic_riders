@@ -19,6 +19,7 @@ const Footer = () => {
             <a
               href="https://api.whatsapp.com/send?phone=5551989476508&text=Texto%20aqui"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={whatsapp} alt="whatsapp" className="whatsapp" />
             </a>

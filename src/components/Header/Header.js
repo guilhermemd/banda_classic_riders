@@ -46,7 +46,7 @@ const Header = () => {
               );
             }
 
-            if (item == "Contato") {
+            if (item === "Contato") {
               return (
                 <button
                   className="sideNavMenuOptions"
