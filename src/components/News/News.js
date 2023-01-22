@@ -20,7 +20,9 @@ const imgsMews = [
 const News = () => {
   return (
     <section className="news">
-      <h1 className="title">Motos e Rock</h1>
+      <h1 className="title">Classic Rider's</h1>
+      <h2 className="subtitle">Motos e Rock</h2>
+
       <div className="imgsWrapper">
         {imgsMews.map((item, index) => (
           <a

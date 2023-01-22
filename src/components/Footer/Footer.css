@@ -6,6 +6,7 @@
 
 .footer p {
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .footer__wrapper {
@@ -17,8 +18,16 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 1rem;
+  transition: 0.4s;
 }
+
+.footer__wrapper a:hover {
+  transform: scale(1.3);
+  transition: 0.4s;
+}
+
 .logoBand {
+  display: none;
   background: rgb(225, 225, 230);
   width: 280px;
 }
@@ -42,6 +51,7 @@
 
 @media (min-width: 600px) {
   .logoBand {
+    display: block;
     width: 145px;
     margin: auto;
   }

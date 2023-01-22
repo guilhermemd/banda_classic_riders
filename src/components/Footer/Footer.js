@@ -10,7 +10,7 @@ import youtube from "../../img/social/youtube.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contato">
       <div className="footer__wrapper">
         <img src={logoBand} alt="logo-band" className="logoBand" />
         <div className="footer__contact">

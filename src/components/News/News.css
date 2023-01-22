@@ -2,10 +2,15 @@
   padding: 1rem;
 }
 
-.title {
+.title,
+.subtitle {
   text-align: center;
   font-size: 2rem;
-  padding: 1rem 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .imgsWrapper {

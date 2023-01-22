@@ -1,5 +1,6 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import burger from "../../img/burger-menu.svg";
 import logo from "../../img/logo.svg";
@@ -7,11 +8,14 @@ import "./Header.css";
 
 const Header = () => {
   const [sideNavActive, setSideNavActive] = useState(false);
-  const menuOptions = ["Agenda", "Shop", "Contato"];
+  const menuOptions = ["Home", "Agenda", "Shop", "Contato"];
 
-  // const history = useNavigate();
+  const history = useNavigate();
 
-  // console.log(history);
+  const handlePathAndSideMenu = (param) => {
+    history(`/${param}`);
+    setSideNavActive(!sideNavActive);
+  };
 
   return (
     <header className="header">
@@ -22,18 +26,48 @@ const Header = () => {
         >
           <img src={burger} alt="menu" className="burger" />
         </button>
-        <img src={logo} alt="log" className="logo" />
+        <Link to={"/"}>
+          <img src={logo} alt="logo" className="logo" />
+        </Link>
       </div>
       {sideNavActive && (
         <div className="sideNavMenu">
-          {menuOptions.map((item) => (
-            <button
-              // onClick={() => history("/agenda")}
-              className="sideNavMenuOptions"
-            >
-              {item}
-            </button>
-          ))}
+          {menuOptions.map((item) => {
+            if (item === "Shop") {
+              return (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.mercadolivre.com.br/"
+                  className="sideNavMenuOptions"
+                >
+                  {item}
+                </a>
+              );
+            }
+
+            if (item == "Contato") {
+              return (
+                <button
+                  className="sideNavMenuOptions"
+                  onClick={() => setSideNavActive(!sideNavActive)}
+                >
+                  <AnchorLink className="sideNavMenuOptions" href="#contato">
+                    {item}
+                  </AnchorLink>
+                </button>
+              );
+            }
+
+            return (
+              <button
+                onClick={() => handlePathAndSideMenu(item)}
+                className="sideNavMenuOptions"
+              >
+                {item}
+              </button>
+            );
+          })}
         </div>
       )}
     </header>
