@@ -7,6 +7,7 @@ import instagram from "../../img/social/instagram.svg";
 import spotify from "../../img/social/spotify.svg";
 import whatsapp from "../../img/social/whatsapp.svg";
 import youtube from "../../img/social/youtube.svg";
+import email from "../../img/social/envelope-regular.svg";
 
 const Footer = () => {
   return (
@@ -14,16 +15,22 @@ const Footer = () => {
       <div className="footer__wrapper">
         <img src={logoBand} alt="logo-band" className="logoBand" />
         <div className="footer__contact">
-          <p>Contato:</p>
+          <p className="footer__contact__title">Contato:</p>
           <div className="footer__contact__wrapper">
-            <a
-              href="https://api.whatsapp.com/send?phone=5551989476508&text=Texto%20aqui"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={whatsapp} alt="whatsapp" className="whatsapp" />
-            </a>
-            <p>(51) 98947-6508</p>
+            <div className="contact__info">
+              <a
+                href="https://api.whatsapp.com/send?phone=5551989476508&text=Texto%20aqui"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={whatsapp} alt="whatsapp" className="whatsapp" />
+              </a>
+              <p>(51) 98947-6508</p>
+            </div>
+            <div className="contact__info">
+              <img src={email} alt="email" />
+              <p>bandaclassicriders@gmail.com</p>
+            </div>
           </div>
         </div>
         <div className="footer__social">
