@@ -2,6 +2,7 @@ import "./News.css";
 import whiplash from "../../img/news/whiplash.png";
 import DG from "../../img/news/DG.png";
 import CP from "../../img/news/CP.png";
+import logoBand from "../../img/logo-band.svg";
 
 const imgsMews = [
   {
@@ -20,8 +21,10 @@ const imgsMews = [
 const News = () => {
   return (
     <section className="news">
-      <h1 className="title">Classic Rider's</h1>
-      <h2 className="subtitle">Motos e Rock</h2>
+      <div className="news__title__wrapper">
+        <img src={logoBand} alt="logo" className="news__logo" />
+        <h2 className="subtitle">Motorock</h2>
+      </div>
 
       <div className="imgsWrapper">
         {imgsMews.map((item, index) => (
