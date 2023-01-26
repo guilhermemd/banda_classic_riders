@@ -30,22 +30,9 @@ const Header = () => {
           <img src={logo} alt="logo" className="logo" />
         </Link>
       </div>
-      {sideNavActive && (
+      {sideNavActive ? (
         <div className="sideNavMenu">
           {menuOptions.map((item) => {
-            if (item === "Shop") {
-              return (
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.mercadolivre.com.br/"
-                  className="sideNavMenuOptions"
-                >
-                  {item}
-                </a>
-              );
-            }
-
             if (item === "Contato") {
               return (
                 <button
@@ -69,7 +56,7 @@ const Header = () => {
             );
           })}
         </div>
-      )}
+      ) : null}
     </header>
   );
 };

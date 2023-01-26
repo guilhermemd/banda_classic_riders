@@ -3,6 +3,7 @@ import "./App.css";
 
 import Agenda from "./pages/Agenda";
 import Main from "./pages/Main";
+import Shop from "./pages/Shop";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/Home" element={<Main />} />
           <Route path="/Agenda" element={<Agenda />} />
+          <Route path="/Shop" element={<Shop />} />
         </Routes>
       </Router>
       <Footer />

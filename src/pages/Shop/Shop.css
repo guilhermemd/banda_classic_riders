@@ -1,0 +1,40 @@
+.shop {
+  padding-top: 70px;
+}
+
+.shop__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.shop h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  color: rgb(225, 225, 230);
+}
+.shop__content__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shop__content__img {
+  border-radius: 1rem;
+  max-width: 375px;
+}
+
+.shop p {
+  color: rgb(225, 225, 230);
+  padding: 1rem 0;
+}
+
+.shop a {
+  all: unset;
+  color: black;
+  background-color: rgb(225, 225, 230);
+  padding: 8px 24px;
+  border-radius: 16px;
+  cursor: pointer;
+}
