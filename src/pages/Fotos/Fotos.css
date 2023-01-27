@@ -1,0 +1,9 @@
+.fotos {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.fotos img {
+  width: 100%;
+}

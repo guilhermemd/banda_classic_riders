@@ -4,6 +4,7 @@ import "./App.css";
 import Agenda from "./pages/Agenda";
 import Main from "./pages/Main";
 import Shop from "./pages/Shop";
+import Fotos from "./pages/Fotos";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Home" element={<Main />} />
           <Route path="/Agenda" element={<Agenda />} />
           <Route path="/Shop" element={<Shop />} />
+          <Route path="/Fotos" element={<Fotos />} />
         </Routes>
       </Router>
       <Footer />

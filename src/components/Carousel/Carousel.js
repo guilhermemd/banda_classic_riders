@@ -12,8 +12,9 @@ import img004 from "../../img/band-pics/004.jpeg";
 import img005 from "../../img/band-pics/005.jpeg";
 import img006 from "../../img/band-pics/006.jpeg";
 import img007 from "../../img/band-pics/007.jpeg";
+import img008 from "../../img/band-pics/008.jpeg";
 
-const slides = [img001, img002, img004, img005, img006, img007];
+const slides = [img001, img002, img004, img005, img006, img007, img008];
 
 const Carousel = () => {
   return (
