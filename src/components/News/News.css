@@ -64,10 +64,7 @@
 
   .imgsWrapper {
     padding-top: 40px;
-    display: grid;
-    grid-template-areas:
-      "img-news-0 img-news-1"
-      "img-news-0 img-news-2";
+    display: flex;
     align-items: center;
     width: 70%;
     margin: 0 auto;
