@@ -18,6 +18,7 @@
 .news__logo {
   background: rgb(225, 225, 230);
   width: 160px;
+  border: #121214 5px solid;
 }
 .subtitle {
   text-align: center;

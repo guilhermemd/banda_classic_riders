@@ -1,0 +1,1 @@
+como fazer uma agenda como dia e mês no mongodb onde as datas experidas são deletadas
