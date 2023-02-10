@@ -15,7 +15,7 @@ const Marketing = () => {
         <p>
           Gostariamos de apresentar nossa página no Facebook e no Instagram para
           sua empresa. Com 7.800 curtidas no Facebook e 13.000 seguidores no
-          instagram ativos e engajados, acredito que posso oferecer uma grande
+          instagram ativos e engajados, acredito que podemos oferecer uma grande
           oportunidade para que sua marca alcance um público amplo e segmentado.
         </p>
         <p>
@@ -56,9 +56,9 @@ const Marketing = () => {
         </p>
 
         <p>
-          Gostaria muito de poder conversar com vocês sobre as possibilidades de
-          parceria entre sua empresa e nossa página. Por favor, entre em contato
-          conosco quando tiverem disponibilidade para uma conversa.
+          Gostariamos muito de poder conversar com vocês sobre as possibilidades
+          de parceria entre sua empresa e nossa página. Por favor, entre em
+          contato conosco quando tiverem disponibilidade para uma conversa.
         </p>
       </div>
     </div>
