@@ -1,0 +1,40 @@
+.marketing__wrapper {
+  padding: 3.5rem 1rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.marketing__title {
+  margin-bottom: -32px;
+  font-size: 2.5rem;
+}
+.marketing__title__band {
+  font-size: 47px;
+}
+.marketing p {
+  color: var(--font-color-primary);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.marketing h1 {
+  text-align: center;
+  color: var(--font-color-primary);
+}
+.marketing__instagram__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.marketing__facebook img {
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .marketing__instagram__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -8,7 +8,14 @@ import "./Header.css";
 
 const Header = () => {
   const [sideNavActive, setSideNavActive] = useState(false);
-  const menuOptions = ["Home", "Agenda", "Fotos", "Shop", "Contato"];
+  const menuOptions = [
+    "Home",
+    "Agenda",
+    "Fotos",
+    "Shop",
+    "Marketing",
+    "Contato",
+  ];
 
   const history = useNavigate();
 
