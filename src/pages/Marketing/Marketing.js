@@ -13,9 +13,9 @@ const Marketing = () => {
         <h1 className="marketing__title">Anuncie com</h1>
         <h1 className="marketing__title__band">Classic Rider's</h1>
         <p>
-          Gostariamos de apresentar nossa página no Facebook e no Instagram para
+          Gostariamos de apresentar minha página no Facebook e no Instagram para
           sua empresa. Com 7.800 curtidas no Facebook e 13.000 seguidores no
-          instagram ativos e engajados, acredito que podemos oferecer uma grande
+          instagram ativos e engajados, acredito que posso oferecer uma grande
           oportunidade para que sua marca alcance um público amplo e segmentado.
         </p>
         <p>
@@ -56,8 +56,8 @@ const Marketing = () => {
         </p>
 
         <p>
-          Gostariamos muito de poder conversar com vocês sobre as possibilidades
-          de parceria entre sua empresa e nossa página.
+          Gostaria muito de poder conversar com vocês sobre as possibilidades de
+          parceria entre sua empresa e nossa página.
         </p>
       </div>
     </div>
