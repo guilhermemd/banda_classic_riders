@@ -57,8 +57,7 @@ const Marketing = () => {
 
         <p>
           Gostariamos muito de poder conversar com vocês sobre as possibilidades
-          de parceria entre sua empresa e nossa página. Por favor, entre em
-          contato conosco quando tiverem disponibilidade para uma conversa.
+          de parceria entre sua empresa e nossa página.
         </p>
       </div>
     </div>
