@@ -34,6 +34,10 @@ const Marketing = () => {
           são complementares ao que oferecemos e, por isso, seria uma parceria
           ideal.
         </p>
+        <p>
+          Atingimos mais de 50 mil pessoas mês em nossas postagens, publicações,
+          basicamente do mundo motociclístico e fãs do Rock n Roll.
+        </p>
         <div className="marketing__instagram">
           <h1>Instagram</h1>
           <img src={insta} alt="insta1" />
