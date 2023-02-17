@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import "./News.css";
 import whiplash from "../../img/news/whiplash.png";
 import DG from "../../img/news/DG.png";
@@ -19,11 +22,32 @@ const imgsMews = [
   },
 ];
 const News = () => {
+  const endpoint = "https://server-schedule.vercel.app/schedule";
+  const [a, setA] = useState([]);
+
+  useEffect(() => {
+    axios.get(endpoint).then((response) => setA(response.data));
+  }, []);
+
+  const nextConcerts = a.slice(0, 2);
+  console.log({ nextConcerts });
   return (
     <section className="news">
+      <h2 className="subtitle">Motorock</h2>
       <div className="news__title__wrapper">
         <img src={logoBand} alt="logo" className="news__logo" />
-        <h2 className="subtitle">Motorock</h2>
+        <div className="news__title__dates">
+          <div>Próximos Shows:</div>
+          <div>
+            {nextConcerts.map(({ dateBr, local }) => (
+              <div>
+                <span>{dateBr}</span>
+                <span> - </span>
+                <span>{local}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="imgsWrapper">

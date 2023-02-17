@@ -7,7 +7,6 @@ const Agenda = () => {
   const [a, setA] = useState([]);
   console.log({ a });
 
-  // const hourElement =()=> ()
   useEffect(() => {
     axios.get(endpoint).then((response) => setA(response.data));
   }, []);
