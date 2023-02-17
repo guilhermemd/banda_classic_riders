@@ -1,14 +1,48 @@
-import data from "../../Mock/agenda.json";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import "./agenda.css";
 const Agenda = () => {
-  const { agenda } = data;
+  const endpoint = "https://server-schedule.vercel.app/schedule";
+  const [a, setA] = useState([]);
+  console.log({ a });
+
+  // const hourElement =()=> ()
+  useEffect(() => {
+    axios.get(endpoint).then((response) => setA(response.data));
+  }, []);
   return (
     <section className="agenda">
       <h1>Agenda:</h1>
-      {agenda.map(({ data, local }) => (
+      {a.map(({ dateBr, local, city, state, address, hour, mapsInfo }) => (
         <div className="wrapperAgenda">
-          <p className="agendaData">{data}</p>
-          <p className="agendaLocal">{local}</p>
+          <div className="agendaData">{dateBr}</div>
+          <div className="agenda__wrapper_hourlocal">
+            <span className="agendaLocal">{local}</span>
+            {hour ? (
+              <>
+                <span> - </span>
+                <span>{hour}</span>
+              </>
+            ) : null}
+          </div>
+          {city ? (
+            <div className="agenda__wrapper_citystate">
+              <span>{city}</span> <span> - </span>
+              <span>{state}</span>
+              <div>{address}</div>
+            </div>
+          ) : null}
+          {mapsInfo ? (
+            <a
+              className="agenda__maps"
+              href={mapsInfo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Maps
+            </a>
+          ) : null}
         </div>
       ))}
     </section>
