@@ -1,19 +1,28 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import Loader from "../../components/Loader";
+
 import "./agenda.css";
 const Agenda = () => {
   const endpoint = "https://server-schedule.vercel.app/schedule";
-  const [a, setA] = useState([]);
-  console.log({ a });
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(endpoint).then((response) => setA(response.data));
+    axios.get(endpoint).then((response) => setData(response.data));
   }, []);
+
+  if (data.length === 0) {
+    return (
+      <div className="agenda__loading">
+        <Loader />;
+      </div>
+    );
+  }
   return (
     <section className="agenda">
       <h1>Agenda:</h1>
-      {a.map(({ dateBr, local, city, state, address, hour, mapsInfo }) => (
+      {data.map(({ dateBr, local, city, state, address, hour, mapsInfo }) => (
         <div className="wrapperAgenda">
           <div className="agendaData">{dateBr}</div>
           <div className="agenda__wrapper_hourlocal">

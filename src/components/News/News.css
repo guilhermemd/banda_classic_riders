@@ -11,7 +11,13 @@
   margin: auto;
   border: 1px solid rgb(225, 225, 230);
   border-radius: 24px;
-  margin: auto;
+}
+
+.agenda__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 333px;
 }
 
 .news__logo {
@@ -26,21 +32,24 @@
   align-items: center;
   gap: 0.5rem;
 }
-.subtitle {
-  text-align: center;
-  font-size: 2rem;
-}
 
 .imgsWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding-top: 40px;
 }
 
 [class*="img-news-"] {
   transition: 0.4s;
+}
+
+.news__loading > div {
+  height: 333px;
+}
+
+.news__nextConcert {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
