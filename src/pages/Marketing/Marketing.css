@@ -26,10 +26,15 @@
   flex-direction: column;
   align-items: center;
   padding: 0.5rem 0;
+  gap: 0.5rem;
 }
 
 .marketing__facebook img {
   padding: 0.5rem 0;
+}
+
+.marketing img {
+  border-radius: 24px;
 }
 
 @media (min-width: 768px) {

@@ -40,6 +40,10 @@
   gap: 1rem;
 }
 
+.imgsWrapper img {
+  border-radius: 24px;
+}
+
 [class*="img-news-"] {
   transition: 0.4s;
 }
