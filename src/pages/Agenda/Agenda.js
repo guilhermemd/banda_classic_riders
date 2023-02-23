@@ -12,7 +12,7 @@ const Agenda = () => {
     axios.get(endpoint).then((response) => setData(response.data));
   }, []);
 
-  if (data) {
+  if (data.length === 0) {
     return (
       <div className="agenda__loading">
         <Loader />;
