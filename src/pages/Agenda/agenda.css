@@ -41,7 +41,13 @@
 
 @media (min-width: 700px) {
   .agenda__loading > div {
-    height: 100vw;
+    height: 83vw;
     padding-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .agenda__loading > div {
+    height: 56vw;
   }
 }
