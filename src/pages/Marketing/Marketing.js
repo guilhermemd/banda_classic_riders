@@ -36,7 +36,7 @@ const Marketing = () => {
         <p>
           Nossa página é dedicada ao bom e velho Rock n Roll, Motociclismo e
           festivais. Temos como objetivo fornecer informações relevantes e de
-          qualidade para nossa comunidade. Acredito que sua empresa possua
+          qualidade para nossa comunidade. Acreditamos que sua empresa possua
           serviços que são complementares ao que oferecemos e, por isso, seria
           uma parceria ideal.
         </p>
@@ -55,12 +55,6 @@ const Marketing = () => {
           <img src={face} alt="face1" />
           <img src={facedados1} alt="face2" />
         </div>
-        <p>
-          Oferecemos diversas opções de divulgação, incluindo publicações
-          patrocinadas, stories e destaques na nossa página. Tudo isso com o
-          objetivo de ajudar sua empresa a alcançar seus objetivos de marketing
-          e alcançar novos clientes.
-        </p>
         <p>Entre em contato para maiores informações.</p>
       </div>
     </div>
