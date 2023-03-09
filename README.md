@@ -19,7 +19,7 @@ To run the application on your machine, follow the steps below:
 `http://localhost:3000`
 
 
-## Deploy Netilifly
+## Deploy Netlifly
 
 [Banda Classic Riders](https://bandaclassicriders.com.br/)
 
