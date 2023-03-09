@@ -11,8 +11,9 @@
 
 .headerOptions {
   max-width: 1024px;
-  grid-template-columns: 1fr 0fr 1fr;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -23,6 +24,10 @@
 .burger {
   width: 2rem;
   cursor: pointer;
+}
+
+.cart {
+  width: 2rem;
 }
 
 .sideNavMenu {
