@@ -1,16 +1,8 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-
 import Loader from "../../components/Loader";
-
+import { useAgenda } from "../../talons/Agenda/useAgenda";
 import "./agenda.css";
 const Agenda = () => {
-  const endpoint = "https://server-schedule.vercel.app/schedule";
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios.get(endpoint).then((response) => setData(response.data));
-  }, []);
+  const { data } = useAgenda();
 
   if (data.length === 0) {
     return (

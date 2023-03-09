@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import "./News.css";
+import HomeAgenda from "../homeAgenda/HomeAgenda";
 import whiplash from "../../img/news/whiplash.png";
 import DG from "../../img/news/DG.png";
 import CP from "../../img/news/CP.png";
-import logoBand from "../../img/logo-band.svg";
-import Loader from "../Loader";
 const imgsMews = [
   {
     image: DG,
@@ -21,41 +18,9 @@ const imgsMews = [
   },
 ];
 const News = () => {
-  const endpoint = "https://server-schedule.vercel.app/schedule";
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    axios.get(endpoint).then((response) => setData(response.data));
-  }, []);
-
-  const nextConcerts = data.slice(0, 2);
-
   return (
     <section className="news">
-      {data.length === 0 ? (
-        <div className="news__loading">
-          <Loader />
-        </div>
-      ) : (
-        <div className="agenda__home">
-          <div className="news__title__wrapper">
-            <img src={logoBand} alt="logo" className="news__logo" />
-            <div className="news__title__dates">
-              <div>Próximos Shows:</div>
-              <div>
-                {nextConcerts.map(({ dateBr, local }) => (
-                  <div className="news__nextConcert">
-                    <span>{dateBr}</span>
-                    <span> - </span>
-                    <span>{local}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
+      <HomeAgenda />
       <div className="imgsWrapper">
         {imgsMews.map((item, index) => (
           <a
