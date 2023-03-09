@@ -55,6 +55,17 @@ const Marketing = () => {
           <img src={face} alt="face1" />
           <img src={facedados1} alt="face2" />
         </div>
+        <div className="marketing__wrapper_linkprice">
+          <a
+            href="https://influencermarketinghub.com/br/calculadora-de-dinheiro-do-instagram/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="marketing__pricelink"
+          >
+            Click aqui para avaliar o valor médio de nossas postagens
+          </a>
+          <p>No link acima adicione a @bandaclassicriders</p>
+        </div>
         <p>Entre em contato para maiores informações.</p>
       </div>
     </div>
