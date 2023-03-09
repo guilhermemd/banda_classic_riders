@@ -4,6 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import burger from "../../img/burger-menu.svg";
 import logo from "../../img/logo.svg";
+import cart from "../../img/cart.svg";
 import "./Header.css";
 
 const Header = () => {
@@ -35,6 +36,9 @@ const Header = () => {
         </button>
         <Link to={"/"}>
           <img src={logo} alt="logo" className="logo" />
+        </Link>
+        <Link to={"/Shop"}>
+          <img src={cart} alt="cart" className="cart" />
         </Link>
       </div>
       {sideNavActive ? (
