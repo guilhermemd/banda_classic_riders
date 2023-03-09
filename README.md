@@ -4,7 +4,7 @@ Installation:
 To run the application on your machine, follow the steps below:
 
 1 - Clone this repository on your machine:
-`git clone https://github.com/your-username/repository-name.git`
+`git clone git@github.com:guilhermemd/banda_classic_riders.git`
 
 2 - Enter the project folder:
 `cd banda_classic_riders`
