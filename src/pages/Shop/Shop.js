@@ -14,6 +14,7 @@ const Shop = () => {
             href="https://lapa1446326.mercadoshops.com.br/MLB-2130944377-camisetas-classic-riders-m-g-e-gg-_JM"
             target="_blank"
             rel="noopener noreferrer"
+            className="shop_btn_buy"
           >
             Comprar
           </a>
@@ -25,6 +26,7 @@ const Shop = () => {
             href="https://lapa1446326.mercadoshops.com.br/MLB-2130823193-disco-classic-riders-_JM"
             target="_blank"
             rel="noopener noreferrer"
+            className="shop_btn_buy"
           >
             Comprar
           </a>
