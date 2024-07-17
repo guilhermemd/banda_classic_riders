@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="footer__contact__wrapper">
             <div className="contact__info">
               <a
-                href="https://api.whatsapp.com/send?phone=5551989476508&text=Texto%20aqui"
+                href="https://api.whatsapp.com/send?phone=5551989476508"
                 target="_blank"
                 rel="noopener noreferrer"
               >
